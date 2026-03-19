@@ -1,0 +1,1191 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostila de Banho e Tosa Profissional | Acesso Imediato</title>
+  <meta name="description" content="Aprenda banho e tosa com uma apostila prática, didática e aprovada por mais de 1.600 alunos. Acesso imediato por apenas R$ 27,90." />
+  
+  <style>
+    :root{
+      --bg: #fffaf8;
+      --bg-soft: #fdf4ef;
+      --bg-card: rgba(255,255,255,0.88);
+      --rose: #d88f8f;
+      --rose-dark: #b86f6f;
+      --rose-soft: #f4dada;
+      --peach: #f5cdb8;
+      --beige: #f7eadf;
+      --gold-soft: #d9b37b;
+      --text: #4f3d3d;
+      --text-soft: #7a6666;
+      --white: #ffffff;
+      --success: #7fb38b;
+      --shadow: 0 12px 35px rgba(184,111,111,0.12);
+      --radius: 22px;
+      --radius-sm: 16px;
+      --transition: all .35s ease;
+      --max: 1180px;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body{
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(244,218,218,.6), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(245,205,184,.45), transparent 28%),
+        linear-gradient(180deg, #fffaf8 0%, #fff7f3 35%, #fdf4ef 100%);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(92%, var(--max));
+      margin:0 auto;
+    }
+
+    .section{
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background: rgba(216,143,143,.12);
+      color: var(--rose-dark);
+      border: 1px solid rgba(216,143,143,.18);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: .92rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .title{
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      color: #5b4444;
+    }
+
+    .subtitle{
+      font-size: clamp(1rem, 1.6vw, 1.25rem);
+      color: var(--text-soft);
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 16px 26px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 1rem;
+      border:none;
+      cursor:pointer;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary{
+      background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+      color: var(--white);
+    }
+
+    .btn-primary:hover{
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 16px 40px rgba(184,111,111,.22);
+    }
+
+    .btn-secondary{
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(216,143,143,.2);
+      color: var(--rose-dark);
+    }
+
+    .btn-secondary:hover{
+      transform: translateY(-2px);
+    }
+
+    .grid{
+      display:grid;
+      gap: 24px;
+    }
+
+    .hero{
+      padding: 28px 0 40px;
+      min-height: 100vh;
+      display:flex;
+      align-items:center;
+      position: relative;
+    }
+
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(255,250,248,.75);
+      border-bottom: 1px solid rgba(216,143,143,.08);
+    }
+
+    .topbar-wrap{
+      width:min(92%, var(--max));
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight: 900;
+      color: #6a4d4d;
+      letter-spacing: -.02em;
+    }
+
+    .brand-badge{
+      width:42px;
+      height:42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--rose-soft), var(--peach));
+      display:grid;
+      place-items:center;
+      box-shadow: var(--shadow);
+      font-size: 1.2rem;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 40px;
+      align-items:center;
+    }
+
+    .hero-points{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 24px 0 30px;
+    }
+
+    .hero-point{
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(216,143,143,.12);
+      padding: 14px 16px;
+      border-radius: 16px;
+      font-size: .96rem;
+      color: var(--text);
+      box-shadow: 0 8px 25px rgba(184,111,111,.06);
+    }
+
+    .hero-cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .micro{
+      font-size: .92rem;
+      color: var(--text-soft);
+    }
+
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.82));
+      border: 1px solid rgba(216,143,143,.12);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:-30% auto auto -20%;
+      width:220px;
+      height:220px;
+      background: radial-gradient(circle, rgba(244,218,218,.7), transparent 70%);
+      border-radius:50%;
+    }
+
+    .ebook{
+      background: linear-gradient(160deg, #fff7f3, #fcebe3);
+      border-radius: 24px;
+      padding: 18px;
+      border: 1px solid rgba(216,143,143,.14);
+      position: relative;
+    }
+
+    .ebook-cover{
+      aspect-ratio: 3/4;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.95)),
+        linear-gradient(135deg, #f9d9d9, #f8e4d8);
+      border: 1px solid rgba(216,143,143,.18);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding: 28px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+    }
+
+    .ebook-label{
+      display:inline-block;
+      background: rgba(216,143,143,.12);
+      color: var(--rose-dark);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .ebook h3{
+      font-size: clamp(1.6rem, 2vw, 2.2rem);
+      line-height: 1.1;
+      margin-bottom: 10px;
+      color: #624949;
+    }
+
+    .ebook p{
+      color: var(--text-soft);
+      font-size: .95rem;
+    }
+
+    .price-box{
+      margin-top: 18px;
+      background: linear-gradient(135deg, rgba(244,218,218,.45), rgba(245,205,184,.35));
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(216,143,143,.12);
+    }
+
+    .old-price{
+      text-decoration: line-through;
+      color: #9f8a8a;
+      font-size: .95rem;
+    }
+
+    .price{
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: var(--rose-dark);
+      line-height: 1;
+      margin: 8px 0;
+    }
+
+    .price small{
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--text-soft);
+    }
+
+    .pill-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 16px;
+    }
+
+    .pill{
+      background: rgba(255,255,255,.8);
+      border: 1px solid rgba(216,143,143,.12);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: .9rem;
+      color: #6b5555;
+      font-weight: 600;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .stat{
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(216,143,143,.1);
+      border-radius: 20px;
+      padding: 22px 18px;
+      text-align:center;
+      box-shadow: 0 10px 25px rgba(184,111,111,.05);
+    }
+
+    .stat strong{
+      display:block;
+      font-size: clamp(1.5rem, 2.2vw, 2.3rem);
+      color: var(--rose-dark);
+      margin-bottom: 6px;
+    }
+
+    .section-head{
+      text-align:center;
+      max-width: 850px;
+      margin: 0 auto 40px;
+    }
+
+    .cards-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .cards-4{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card{
+      background: var(--bg-card);
+      border: 1px solid rgba(216,143,143,.1);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(184,111,111,.05);
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 18px 36px rgba(184,111,111,.09);
+    }
+
+    .icon{
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display:grid;
+      place-items:center;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(244,218,218,.65), rgba(245,205,184,.55));
+    }
+
+    .card h3{
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      color: #5a4444;
+    }
+
+    .card p, .card li{
+      color: var(--text-soft);
+      font-size: .96rem;
+    }
+
+    .checklist{
+      list-style:none;
+      display:grid;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .checklist li{
+      padding-left: 28px;
+      position:relative;
+    }
+
+    .checklist li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      top:0;
+      color: var(--success);
+      font-weight: 900;
+    }
+
+    .highlight{
+      background: linear-gradient(135deg, rgba(255,255,255,.8), rgba(253,244,239,.9));
+      border: 1px solid rgba(216,143,143,.12);
+      border-radius: 26px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items:start;
+    }
+
+    .testimonials{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .testimonial{
+      background: rgba(255,255,255,.85);
+      border: 1px solid rgba(216,143,143,.1);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(184,111,111,.05);
+      position: relative;
+    }
+
+    .stars{
+      margin-bottom: 12px;
+      font-size: 1rem;
+      color: var(--gold-soft);
+      letter-spacing: 2px;
+    }
+
+    .testimonial p{
+      color: var(--text-soft);
+      margin-bottom: 14px;
+    }
+
+    .person{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+    }
+
+    .avatar{
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display:grid;
+      place-items:center;
+      font-weight: 800;
+      color: #fff;
+      background: linear-gradient(135deg, var(--rose), var(--peach));
+    }
+
+    .faq{
+      display:grid;
+      gap: 16px;
+    }
+
+    .faq-item{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(216,143,143,.1);
+      border-radius: 18px;
+      overflow:hidden;
+      box-shadow: 0 8px 22px rgba(184,111,111,.04);
+    }
+
+    .faq-question{
+      width:100%;
+      border:none;
+      background: transparent;
+      text-align:left;
+      padding: 18px 20px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #5c4747;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .faq-answer{
+      max-height: 0;
+      overflow:hidden;
+      transition: max-height .35s ease;
+      padding: 0 20px;
+    }
+
+    .faq-answer p{
+      color: var(--text-soft);
+      padding-bottom: 18px;
+    }
+
+    .bonus-card{
+      background: linear-gradient(135deg, rgba(244,218,218,.35), rgba(245,205,184,.28));
+      border: 1px solid rgba(216,143,143,.12);
+    }
+
+    .cta-box{
+      text-align:center;
+      background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(253,244,239,.95));
+      border: 1px solid rgba(216,143,143,.12);
+      border-radius: 28px;
+      padding: 40px 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-price{
+      margin: 16px 0;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      color: var(--rose-dark);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .guarantee{
+      margin-top: 16px;
+      color: var(--text-soft);
+      font-size: .95rem;
+    }
+
+    footer{
+      padding: 32px 0 50px;
+      text-align:center;
+      color: #8a7676;
+      font-size: .9rem;
+    }
+
+    .reveal{
+      opacity: 0;
+      transform: translateY(18px);
+      transition: .7s ease;
+    }
+
+    .reveal.active{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1024px){
+      .hero-grid,
+      .two-col{
+        grid-template-columns: 1fr;
+      }
+
+      .cards-3{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cards-4{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials{
+        grid-template-columns: 1fr;
+      }
+
+      .stats{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 680px){
+      .section{
+        padding: 60px 0;
+      }
+
+      .hero{
+        min-height: auto;
+        padding-top: 24px;
+      }
+
+      .hero-points{
+        grid-template-columns: 1fr;
+      }
+
+      .cards-3,
+      .cards-4,
+      .stats{
+        grid-template-columns: 1fr;
+      }
+
+      .topbar-wrap{
+        gap: 10px;
+      }
+
+      .brand span{
+        font-size: .95rem;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .hero-cta{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="topbar">
+    <div class="topbar-wrap">
+      <a href="#" class="brand">
+        <div class="brand-badge">🐾</div>
+        <span>Apostila de Banho & Tosa</span>
+      </a>
+      <a href="#comprar" class="btn btn-primary" style="padding:12px 20px; font-size:.95rem;">Comprar Agora</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">✨ Material didático, prático e aprovado</div>
+        <h1 class="title">
+          Aprenda <span style="color: var(--rose-dark);">Banho e Tosa</span> com uma apostila completa, clara e feita para quem quer começar do jeito certo
+        </h1>
+        <p class="subtitle">
+          Tenha acesso a um material que já ajudou a formar <strong>mais de 1.600 alunos</strong>. 
+          Uma apostila prática, objetiva e pensada para quem deseja aprender técnicas essenciais de banho e tosa, 
+          entender equipamentos, evitar erros e ter mais segurança no atendimento.
+        </p>
+
+        <div class="hero-points">
+          <div class="hero-point">📘 Conteúdo organizado e fácil de entender, mesmo para iniciantes</div>
+          <div class="hero-point">🐶 Técnicas práticas para banho, secagem, escovação, lâminas e acabamento</div>
+          <div class="hero-point">🧠 Aprenda com mais segurança e evite erros comuns no dia a dia</div>
+          <div class="hero-point">💖 Apostila digital para acessar quando quiser, para sempre</div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="https://pag.ae/81BxFUqw3/button" class="btn btn-primary">Quero Garantir Minha Apostila por R$ 27,90</a>
+          <a href="#conteudo" class="btn btn-secondary">Ver o que vou aprender</a>
+        </div>
+
+        <p class="micro">
+          ✔ Acesso imediato após o pagamento • ✔ Material digital • ✔ Sem mensalidade • ✔ Acesso vitalício
+        </p>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="ebook">
+          <div class="ebook-cover">
+            <span class="ebook-label">APOSTILA DIGITAL</span>
+            <h3>Banho e Tosa<br>Profissional</h3>
+            <p>Um guia completo para quem quer aprender com mais segurança, técnica e confiança.</p>
+          </div>
+
+          <div class="price-box">
+            <div class="old-price">De R$ 97,00</div>
+            <div class="price">R$ 27,90 <small>à vista</small></div>
+            <p class="micro">Pagamento único. Acesso liberado logo após a confirmação.</p>
+
+            <div class="pill-row">
+              <div class="pill">📥 Entrega digital</div>
+              <div class="pill">📱 Acesso no celular</div>
+              <div class="pill">💻 Acesso no computador</div>
+              <div class="pill">♾️ Para sempre</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL RÁPIDA -->
+  <section class="section" style="padding-top: 10px;">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat">
+          <strong>+1.600</strong>
+          <span>alunos impactados</span>
+        </div>
+        <div class="stat">
+          <strong>29+</strong>
+          <span>tópicos essenciais</span>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>material digital</span>
+        </div>
+        <div class="stat">
+          <strong>R$ 27,90</strong>
+          <span>investimento acessível</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VAI APRENDER -->
+  <section class="section" id="conteudo">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">📚 O que você vai aprender</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Um conteúdo pensado para quem quer aprender na prática</h2>
+        <p class="subtitle" style="margin: 0 auto;">
+          A apostila reúne assuntos fundamentais para quem quer começar com mais confiança e entender o processo do banho e tosa de forma mais profissional.
+        </p>
+      </div>
+
+      <div class="cards-3">
+        <div class="card reveal">
+          <div class="icon">✂️</div>
+          <h3>Equipamentos e Ferramentas</h3>
+          <ul class="checklist">
+            <li>Altura das lâminas e uso correto</li>
+            <li>Adaptadores e diferenças práticas</li>
+            <li>Máquina de tosa e manutenção</li>
+            <li>Tipos de tesouras e aplicações</li>
+            <li>Secador, soprador, escovas e pentes</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">🛁</div>
+          <h3>Banho, Secagem e Preparação</h3>
+          <ul class="checklist">
+            <li>Passo a passo do banho correto</li>
+            <li>Limpeza dos ouvidos e corte de unhas</li>
+            <li>Escovação e desembolo dos pelos</li>
+            <li>Uso correto da toalha, secador e soprador</li>
+            <li>Frequência ideal de banho por tipo de pelagem</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">🐕</div>
+          <h3>Técnica, Segurança e Atendimento</h3>
+          <ul class="checklist">
+            <li>Prevenção de acidentes no banho e tosa</li>
+            <li>Uso seguro da máquina no animal</li>
+            <li>Checklist de atendimento</li>
+            <li>Agenda do banho e tosa</li>
+            <li>Noções de anatomia e observação do pet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAÇAS / DIFERENCIAL -->
+  <section class="section">
+    <div class="container">
+      <div class="highlight reveal">
+        <div class="two-col">
+          <div>
+            <div class="eyebrow">🐾 Diferencial do material</div>
+            <h2 style="font-size: clamp(1.8rem, 3vw, 2.8rem); line-height:1.1; margin-bottom: 14px;">
+              Não é só teoria: você aprende com base em situações reais do dia a dia
+            </h2>
+            <p class="subtitle" style="margin-bottom: 16px;">
+              A apostila aborda desde a preparação e os cuidados básicos até a observação da pelagem, 
+              escolha de ferramentas e noções importantes para trabalhar com mais segurança e melhor acabamento.
+            </p>
+            <ul class="checklist">
+              <li>Entenda diferenças de ferramentas e quando usar cada uma</li>
+              <li>Aprenda sobre cuidados com pelagem e prevenção de erros</li>
+              <li>Tenha uma base melhor para atender com mais confiança</li>
+              <li>Material ideal para quem está começando ou quer revisar fundamentos</li>
+            </ul>
+          </div>
+
+          <div class="card" style="background: linear-gradient(135deg, rgba(244,218,218,.28), rgba(245,205,184,.22));">
+            <div class="icon">🐩</div>
+            <h3>Inclui conteúdos úteis sobre raças e procedimentos</h3>
+            <p style="margin-bottom: 14px;">
+              O material ainda traz orientações e referências úteis para raças muito procuradas no banho e tosa, como:
+            </p>
+            <div class="pill-row">
+              <div class="pill">Shih Tzu</div>
+              <div class="pill">Lhasa Apso</div>
+              <div class="pill">Maltês</div>
+              <div class="pill">Yorkshire</div>
+            </div>
+            <p style="margin-top: 16px; color: var(--text-soft);">
+              Isso ajuda você a entender melhor rotina, pelagem, ferramentas e cuidados importantes em atendimentos comuns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">🎯 Para quem é essa apostila?</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Feita para quem quer aprender sem complicação</h2>
+      </div>
+
+      <div class="cards-4">
+        <div class="card reveal">
+          <div class="icon">🌱</div>
+          <h3>Iniciantes</h3>
+          <p>Para quem está começando do zero e quer aprender os fundamentos do banho e tosa com mais clareza.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">💼</div>
+          <h3>Profissionais em início</h3>
+          <p>Para quem já atende ou está entrando na área e quer reforçar técnica, segurança e rotina de trabalho.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">🏠</div>
+          <h3>Autônomos</h3>
+          <p>Ideal para quem deseja construir uma base para começar atendimentos, organizar o processo e ganhar confiança.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">📖</div>
+          <h3>Quem quer revisar</h3>
+          <p>Ótimo para quem já viu algo da área, mas sente que precisa de um material prático para consultar sempre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="section" style="background: rgba(255,255,255,.35);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">💬 Quem comprou, aprovou</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Mais de 1.600 alunos já confiaram nesse material</h2>
+        <p class="subtitle" style="margin: 0 auto;">
+          Uma apostila aprovada por quem buscava aprender com mais clareza, praticidade e segurança.
+        </p>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Eu estava perdida no começo e essa apostila me ajudou a entender desde os equipamentos até a parte de banho, secagem e acabamento. Muito didática!”
+          </p>
+          <div class="person">
+            <div class="avatar">M</div>
+            <div>
+              <strong>Mariana S.</strong><br>
+              <span style="color: var(--text-soft); font-size: .9rem;">Aluna iniciante</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Gostei porque não é enrolação. É um material que dá direção e ajuda muito quem quer começar com mais segurança.”
+          </p>
+          <div class="person">
+            <div class="avatar">J</div>
+            <div>
+              <strong>Juliana R.</strong><br>
+              <span style="color: var(--text-soft); font-size: .9rem;">Profissional autônoma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Vale muito mais do que o preço. Já usei várias partes da apostila para revisar e consultar no dia a dia.”
+          </p>
+          <div class="person">
+            <div class="avatar">C</div>
+            <div>
+              <strong>Camila P.</strong><br>
+              <span style="color: var(--text-soft); font-size: .9rem;">Aluna da área pet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJEÇÕES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">🧠 Quebrando objeções</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Talvez você esteja pensando isso agora...</h2>
+      </div>
+
+      <div class="cards-3">
+        <div class="card reveal">
+          <div class="icon">❓</div>
+          <h3>“Mas eu sou iniciante...”</h3>
+          <p>
+            Justamente por isso essa apostila faz sentido para você. O conteúdo foi organizado para ser fácil de entender e ajudar quem está começando.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">💸</div>
+          <h3>“Será que vale esse valor?”</h3>
+          <p>
+            Por apenas <strong>R$ 27,90</strong>, você recebe um material completo, com acesso para sempre e que pode te poupar erros, insegurança e perda de tempo.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">📱</div>
+          <h3>“Vou conseguir acessar fácil?”</h3>
+          <p>
+            Sim. É um material digital, simples de acessar e consultar no celular, tablet ou computador, quantas vezes quiser.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">🎁 Bônus exclusivos</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Além da apostila, você leva mais valor</h2>
+      </div>
+
+      <div class="cards-3">
+        <div class="card bonus-card reveal">
+          <div class="icon">📝</div>
+          <h3>Bônus 1: Checklist de apoio</h3>
+          <p>
+            Use a apostila como referência para revisar etapas essenciais do atendimento e não esquecer pontos importantes do processo.
+          </p>
+        </div>
+
+        <div class="card bonus-card reveal">
+          <div class="icon">📚</div>
+          <h3>Bônus 2: Material para consulta contínua</h3>
+          <p>
+            Diferente de algo que você vê uma vez e esquece, essa apostila fica com você para consultar sempre que surgir dúvida.
+          </p>
+        </div>
+
+        <div class="card bonus-card reveal">
+          <div class="icon">♾️</div>
+          <h3>Bônus 3: Acesso vitalício</h3>
+          <p>
+            Você compra uma vez e o material é seu para sempre. Sem mensalidade, sem renovação e sem prazo para expirar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANTE / CERTIFICADO -->
+  <section class="section">
+    <div class="container">
+      <div class="highlight reveal">
+        <div class="two-col">
+          <div>
+            <div class="eyebrow">⚠️ Informação importante</div>
+            <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); line-height:1.1; margin-bottom: 14px;">
+              Transparência total antes da sua compra
+            </h2>
+            <p class="subtitle" style="margin-bottom: 12px;">
+              Esta oferta é de uma <strong>apostila digital</strong> com conteúdo de apoio e aprendizado.
+            </p>
+            <ul class="checklist">
+              <li><strong>Não inclui certificado</strong></li>
+              <li>O foco é entregar um material útil, prático e de consulta permanente</li>
+              <li>Ideal para aprender, revisar e ganhar mais segurança no dia a dia</li>
+              <li>Você terá a apostila para sempre após a compra</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="icon">💡</div>
+            <h3>Por que isso ainda vale muito a pena?</h3>
+            <p style="margin-bottom: 10px;">
+              Porque o que realmente faz diferença é o conteúdo que você consegue aplicar.
+            </p>
+            <p>
+              Por um valor acessível, você leva um material didático, aprovado por muitos alunos, 
+              com assuntos essenciais para fortalecer sua base no banho e tosa — e pode consultar sempre que precisar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">❔ Perguntas frequentes</div>
+        <h2 class="title" style="font-size: clamp(1.8rem, 3vw, 3rem);">Ainda está com dúvidas?</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Essa apostila é para quem está começando do zero?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. O material foi pensado para ajudar iniciantes a entenderem fundamentos importantes do banho e tosa de forma mais clara e organizada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Vou receber certificado?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Esta oferta é de uma apostila digital de apoio e aprendizado. O grande benefício é ter um material útil, acessível e que fica com você para sempre.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Como vou receber o material?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Após a confirmação do pagamento, você receberá acesso ao material digital. Depois você pode salvar e consultar no celular, tablet ou computador.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            O acesso expira?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não. A proposta é que você tenha acesso à apostila para sempre, podendo revisar quantas vezes quiser.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Por que o valor está tão acessível?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Porque a ideia é tornar o conteúdo acessível para mais pessoas que querem entrar na área ou fortalecer sua base, sem precisar investir alto logo no início.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section" id="comprar">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="eyebrow">🚀 Último passo</div>
+        <h2 class="title" style="font-size: clamp(2rem, 4vw, 3.4rem); margin-bottom: 10px;">
+          Garanta agora sua Apostila de Banho e Tosa
+        </h2>
+        <p class="subtitle" style="margin: 0 auto 10px;">
+          Um material aprovado, acessível e pensado para quem quer aprender com mais clareza, segurança e praticidade.
+        </p>
+
+        <div class="old-price">De R$ 97,00</div>
+        <div class="cta-price">R$ 27,90</div>
+        <p class="micro" style="margin-bottom: 20px;">
+          Pagamento único • Acesso imediato • Material digital • Acesso para sempre
+        </p>
+
+
+
+      <a 
+          href="https://pag.ae/81BxFUqw3/button" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          style="font-size:1.05rem; padding:18px 28px;"
+        >
+          Quero Comprar Agora no PagSeguro
+        </a>
+
+        <p class="guarantee">
+          🔒 Compra segura • 📥 Entrega digital • 💖 Ideal para iniciantes e para quem quer revisar fundamentos
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>Apostila de Banho & Tosa</strong> • Material digital de apoio • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('span');
+
+        const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+        document.querySelectorAll('.faq-answer').forEach(item => {
+          item.style.maxHeight = null;
+        });
+
+        document.querySelectorAll('.faq-question span').forEach(s => {
+          s.textContent = '+';
+        });
+
+        if(!isOpen){
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.textContent = '–';
+        }
+      });
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.88;
+
+      reveals.forEach(item => {
+        const top = item.getBoundingClientRect().top;
+        if(top < trigger){
+          item.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Smooth fake urgency pulse on CTA
+    const ctaBtn = document.querySelector('#comprar .btn-primary');
+    if(ctaBtn){
+      setInterval(() => {
+        ctaBtn.style.transform = 'scale(1.02)';
+        setTimeout(() => {
+          ctaBtn.style.transform = 'scale(1)';
+        }, 400);
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
